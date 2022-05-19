@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <title>WEBSITE</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body onload="slider()">
             <div class="slider">
@@ -16,17 +16,17 @@
                                 <h1>MISUL</h1>
                             </div>
                             <ul>
-                                <li><a href="#">HOME</a></li>
-                                <li><a href="#">EXPLORE</a></li>
-                                <li><a href="#">GALLERY</a></li>
-                                <li><a href="#">VIDEOS</a></li>
-                                <li><a href="#">ARTIST</a></li>
+                                <li><a class="active" href="index.html">HOME</a></li>
+                                <li><a href="explore.html">EXPLORE</a></li>
+                                <li><a href="gallery.html">GALLERY</a></li>
+                                <li><a href="videos.html">VIDEOS</a></li>
+                                <li><a href="artist.html">ARTIST</a></li>
                             </ul>
                         </nav>
                     </div>
                 <div class="title">
                     <h1>(: <span> CREATIVITY </span> IS A DRUG, <br> IT'S OK TO BE <span> ADDICTED </span> :)</h1>
-                    <a href="#" class="btn">Get More!</a>
+                    <a href="#" class="btn" target="popup">Get More!</a>
                 </div>
                 </div>
             </div>
@@ -46,7 +46,7 @@
             var i = 0;
 
             function slider(){
-                if(i > len-1){
+                if(i > len-1){ 
                     i=0;
                 }
                 slideImg.src = images[i];
