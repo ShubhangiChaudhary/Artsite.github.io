@@ -5,13 +5,13 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.section {
+/* .section {
   width: 100%;
   height: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
   position: absolute;
   top: 0%;
-}
+} */
 
 .navbar {
   max-width: 1200px;
@@ -30,10 +30,9 @@ nav {
 }
 
 .logo h1 {
-  color: white;
+  color: black;
   text-decoration: underline;
 }
-
 
 nav ul {
   float: right;
@@ -46,7 +45,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: white;
+  color: black;
   line-height: 100px;
   padding: 10px 28px;
   font-size: 16px;
@@ -56,7 +55,7 @@ nav ul li a {
   font-weight: bold;
 }
 
-nav ul li a.active,a:hover {
+nav ul li a.active {
   /* border: 1px solid white; */
   background-color: red;
   transition: 0.5s;
@@ -68,22 +67,77 @@ nav ul li a:hover {
   transition: 0.4s;
 }
 
+body {
+  background: silver;
+}
 
+.heading h1 {
+  text-align: center;
+  font-style: italic;
+  color: rgb(61, 2, 72);
+}
+
+.heading p {
+  line-height: 25px;
+  margin: 25px;
+}
+
+.heading img {
+  width: 450px;
+  height: 400px;
+  margin-left: 120px;
+  border-radius: 5px;
+  border: 2px solid black;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.heading img:hover {
+  transform: scale(1.1);
+}
+
+.heading h2 {
+  /* text-align: center; */
+  font-style: italic;
+  color: darkblue;
+  /* padding: 30px; */
+  margin-top: 40px;
+  margin-left: 25px;
+}
 
 /* ***************************************************** */
 
+@media (max-width: 1048px) {
+  .logo h1 {
+    font-size: 13px;
+    padding-left: 10px;
+  }
 
-@media(max-width: 1048px){
-    .logo h1{
-        /* font-size: 32px; */
-        padding-left: 60px;
-    }
+  nav ul {
+    margin-right: 10px;
+    padding-top: 39px;
+  }
 
-    nav ul{
-        margin-right: 10px;
-    }
+  nav ul li a {
+    font-size: 13px;
+    line-height: 20px;
+    padding: 8px;
+  }
 
-    nav a{
-      font-size: 17px;
-    }
+  .heading img {
+    width: 160px;
+    height: 150px;
+    margin-left: 50px;
+  }
+
+  .heading h1 {
+    font-size: 25px;
+  }
+
+  .heading p{
+    font-size: 13px;
+  }
+  .heading h2{
+    font-size: 20px;
+  }
 }
