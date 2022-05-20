@@ -66,7 +66,7 @@
           video.classList.add('active');
           if(video.classList.contains('active')){
             let src = video.children[0].getAttribute('src');
-            mainVideo.src = src;
+            mainVideo.src = video.src;
             let text = video.children[1].innerHTML;
             title.innerHTML = text;
           };
