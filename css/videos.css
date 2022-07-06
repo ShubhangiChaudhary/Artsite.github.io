@@ -185,3 +185,36 @@ body{
      grid-template-columns: 1fr;
   }
 }
+
+/* ***************************************************** */
+@media (max-width: 1048px) {
+  .logo h1 {
+    font-size: 13px;
+    padding-left: 10px;
+  }
+
+  nav ul {
+    margin-right: 10px;
+    padding-top: 39px;
+  }
+
+  nav ul li a {
+    font-size: 13px;
+    line-height: 20px;
+    padding: 8px;
+  }
+
+  .slider .title h1 {
+  font-size: 20px;
+  line-height: 35px;
+  /* justify-content: center; */
+  }
+
+  .slider .title .btn {
+  padding: 8px 25px;
+  /* margin-right: 10px; */
+  font-size: 12px;
+  
+  }
+
+}
